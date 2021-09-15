@@ -1,0 +1,3 @@
+[submodule "mdBook-pagetoc"]
+    path = mdBook-pagetoc
+    url = https://github.com/Sciroccogti/mdBook-pagetoc.git

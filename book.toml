@@ -1,0 +1,28 @@
+[book]
+authors = []
+language = "zh-cn"
+multilingual = false
+src = "src"
+
+[build]
+create-missing = false
+
+[preprocessor.katex]
+
+[preprocessor.mark]
+command = "mdbook-mark"
+[preprocessor.mermaid]
+command = "mdbook-mermaid"
+
+[output.html]
+additional-css = ["mdBook-pagetoc/style.css"]
+additional-js = [
+    "mdBook-pagetoc/sidebar.js",
+    "mdbook-mermaid/mermaid.min.js",
+    "mdbook-mermaid/mermaid-init.js",
+]
+no-section-label = true
+
+[output.html.fold]
+enable = true
+level = 0
