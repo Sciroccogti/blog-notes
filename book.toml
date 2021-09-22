@@ -6,20 +6,22 @@ src = "src"
 
 [build]
 create-missing = false
+build-dir = "../public/notes"
 
 [preprocessor.katex]
 
 [preprocessor.mark]
 command = "mdbook-mark"
-[preprocessor.mermaid]
-command = "mdbook-mermaid"
+
+# [preprocessor.mermaid]
+# command = "mdbook-mermaid"
 
 [output.html]
 additional-css = ["mdBook-pagetoc/style.css"]
 additional-js = [
     "mdBook-pagetoc/sidebar.js",
-    "mdbook-mermaid/mermaid.min.js",
-    "mdbook-mermaid/mermaid-init.js",
+#    "mdbook-mermaid/mermaid.min.js",
+#    "mdbook-mermaid/mermaid-init.js",
 ]
 no-section-label = true
 
