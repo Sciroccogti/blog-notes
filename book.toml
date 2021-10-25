@@ -17,6 +17,7 @@ command = "mdbook-mark"
 # command = "mdbook-mermaid"
 
 [output.html]
+git-repository-url = "https://github.com/Sciroccogti/blog-notes"
 additional-css = ["mdBook-pagetoc/style.css"]
 additional-js = [
     "mdBook-pagetoc/sidebar.js",

@@ -71,6 +71,7 @@ layout: note
 若$\alpha_1,\alpha_2,\dots,\alpha_n\in V$ 满足条件：
 1. $\alpha_1,\alpha_2,\dots,\alpha_n$ 线性无关
 2. 任意的 $\eta\in V$ 均可由 $\alpha_1,\alpha_2,\dots,\alpha_n$线性表示
+
 则称$\alpha_1,\alpha_2,\dots,\alpha_n$ 是 V 的一组基
 
 #### 维数
@@ -101,6 +102,7 @@ layout: note
 $X_1X_2X_3$ 的秩：
 1. 若 $=3$：线性无关
 2. 若 $<3$：线性相关
+
 即其阶梯矩阵非零行的数量
 
 ### 1-2-3 基变换和坐标变换
@@ -108,9 +110,11 @@ $X_1X_2X_3$ 的秩：
 #### 形式记号
 
 设$\alpha_1,\alpha_2,\dots,\alpha_s\in V$,定义形式行向量$\alpha_1,\alpha_2,\dots,\alpha_s$。
+
 比如，若 $X=\begin{pmatrix}x_1\\x_2\\\vdots\\x_n \end{pmatrix}$ 是β在基$\alpha_1,\alpha_2,\dots,\alpha_n$下的坐标，
-则$\beta$可形式地记成$\beta=(\alpha_1,\alpha_2,\dots,\alpha_n)\begin{pmatrix}x_1\\x_2\\\vdots\\x_n \end{pmatrix}=(\alpha_1,\alpha_2,\dots,\alpha_n)X$。
-若$\beta_1,\beta_2,\dots,\beta_t$可由$\alpha_1,\alpha_2,\dots,\alpha_s$线性表示，
+则 $\beta$ 可形式地记成 $\beta=(\alpha_1,\alpha_2,\dots,\alpha_n)\begin{pmatrix}x_1\\x_2\\\vdots\\x_n \end{pmatrix}=(\alpha_1,\alpha_2,\dots,\alpha_n)X$。
+
+若 $\beta_1,\beta_2,\dots,\beta_t$ 可由 $\alpha_1,\alpha_2,\dots,\alpha_s$ 线性表示，
 于是，我们可以找到一个s×t矩阵A使得$(\beta_1,\beta_2,\dots,\beta_t)=(\alpha_1,\alpha_2,\dots,\alpha_s)A$
 
 **性质**：
@@ -156,8 +160,10 @@ $(\beta_1,\beta_2,\dots,\beta_n)=(\alpha_1,\alpha_2,\dots,\alpha_n)A$
 1. 设 $A\in F^{s\times n},V=\{\eta\in F^n|A\eta=\theta\}$，称 V 是齐次线性方程组 $Ax=\theta$ 的解空间.（基础解系是 V 的一组基，维数是 $n-r$。）
 2. 设 $V$ 是 $F$ 上的线性空间，$\alpha_1,\alpha_2,\dots,\alpha_s\in V$，集合
    $$W=\left\{\sum^s_{i=1}k_i\alpha_i|\forall k_i\in F\right\}$$
-   称 W 是由 $\alpha_1,\alpha_2,\dots,\alpha_s$ 生成的子空间
-   称 $\alpha_1,\alpha_2,\dots,\alpha_s$ 是W的生成元。记 $W=L(\alpha_1,\alpha_2,\dots,\alpha_s)$
+   称 W 是由 $\alpha_1,\alpha_2,\dots,\alpha_s$ 生成的子空间，
+   称 $\alpha_1,\alpha_2,\dots,\alpha_s$ 是W的生成元。
+   
+   记 $W=L(\alpha_1,\alpha_2,\dots,\alpha_s)$ 或 $span\{\alpha_1,\alpha_2,\dots,\alpha_s\}$
 
 **性质**：
 1. 若 $W=L(\alpha_1,\alpha_2,\dots,\alpha_s)$ ，则 $\forall k_j\in W$
@@ -167,6 +173,8 @@ $(\beta_1,\beta_2,\dots,\beta_n)=(\alpha_1,\alpha_2,\dots,\alpha_n)A$
 ### 1-3-4 基扩充定理
 
 有限维线性空间 V 中任意线性无关向量组均可扩充成 V 的基
+
+$E_{ij}$：仅有第 i 行第 j 列为 1，其它元素为 0 的方阵
 
 ## 1-4 子空间的交与和
 
