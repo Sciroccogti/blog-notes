@@ -159,7 +159,7 @@ $$W^\perp=\{\alpha\in V|\alpha\perp W\}$$
 ### 2-2-2 $R(A)^\perp$ 和 $K(A)^\perp$
 
 **定理**：
-$R(A)^\perp=K(A)^H,K(A)^\perp=R(A)^H$
+$R(A)^\perp=K(A)^H,K(A)^\perp=R(A)^H=R(A^H)$
 
 ### 2-2-3 正投影
 

@@ -79,7 +79,7 @@ layout: note
 1. 若 $V$ 的某一组基中含$n$个向量，则$V$的任一组基中都含$n$个向量，称$n$是$V$的维数，记为$dimV$
 2. 若$dim V=n$，则$V$中任意$n+1$个向量线性相关
 3. 线性空间的基不一定存在，
-   - 如：只含一个零向量的空间称为零空间，规定零子空间的维数为$0$.
+   - 如：只含一个零向量的空间称为零空间，**规定零子空间的维数为$0$**
    - 再如：$V=F[x]$规定 $dimF[x]=\infty$
 
 **定理**：若 $dim V=n$，则 V 中任意 $n$ 个线性无关的向量均构成 $V$ 的基
@@ -209,7 +209,7 @@ $V_1\cap V_2,V_1+V_2$都是 V 的子空间.
 1. $V_1+V_2$ 直和
 2. $\theta$ 的表示方式是唯一的
 3. $V_1\cap V_2=\{\theta\}$
-4. $dim(Vi+V2)=dimV_1+dim V_2$；
+4. $dim(V_1+V_2)=dimV_1+dim V_2$；
 5. 将$V_1,V_2$的基合在一起就是$V_1+V_2$的基
 
 **多个子空间的直和**：
@@ -240,9 +240,10 @@ S在映射 $f$ 下的全体象记为 $f(S)$，称为 $f$ 的值域
 集合S到自身的映射 $f:S\rightarrow S$，$x\rightarrow x$称为S上的恒等变换
 
 **定义**：
-设映射 $f:S\rightarrow T$，若 $f(S)=T$.则称 $f$ 是满射
-若由 $f(a)=f(b)$ 必能推得 $a=b$，则称 $f$ 是单射
-若 $f$ 既是满射又是单射，则称 $f$ 是双射
+设映射 $f:S\rightarrow T$
+- 若 $f(S)=T$.则称 $f$ 是满射
+- 若由 $f(a)=f(b)$ 必能推得 $a=b$，则称 $f$ 是单射
+- 若 $f$ 既是满射又是单射，则称 $f$ 是双射
 
 **定理**：
 $f:S\rightarrow S$ 是双射 $\Leftrightarrow f$是可逆映射
@@ -299,12 +300,16 @@ $$V:\alpha_1,\alpha_2,\dots,\alpha_n;U:\beta_1,\beta_2,\dots,\beta_s$$
 下的矩阵是 $A, \eta\in V$ 在 $\alpha_1,\alpha_2,\dots,\alpha_n$的坐标是 $X$，
 则 $f(n)$ 在基 $\beta_1,\beta_2,\dots,\beta_s$ 下的坐标是 $AX$.
 
+**过渡矩阵**：$\alpha_1,\alpha_2,\dots,\alpha_n$ 到
+基 $\beta_1,\beta_2,\dots,\beta_s$ 的过渡矩阵是 $P$，也就是 $(\alpha_1,\alpha_2,\dots,\alpha_n)P=(\beta_1,\beta_2,\dots,\beta_s)$
+
 **定理**：
-设 $f\in Hom(V,U)$在选定基偶：$V$ 的一组基 $\alpha_1,\alpha_2,\dots,\alpha_n$ 到
-基 $\beta_1,\beta_2,\dots,\beta_s$ 的过渡矩阵是 $P$，$U$ 的一组基$\xi_1,\xi_2,\dots,\xi_s$到
-基 $\eta_1,\eta_2,\dots,\ets_s$ 的过渡矩阵是$Q$，
-若$f$在基偶 $\{a_i\}_1^n$ 与 $\{\xi_i\}_1^s$ 下矩阵为A，在基偶 $\{\beta_i\}_1^n$ 与 $\{\eta_i\}_1^s$ 下矩阵为 $B$，
+设 $f\in Hom(V,U)$在选定基偶：$V$ 的一组基 $\alpha_1,\alpha_2,\dots,\alpha_n$ 到<br>
+基 $\beta_1,\beta_2,\dots,\beta_s$ 的过渡矩阵是 $P$，$U$ 的一组基 $\xi_1,\xi_2,\dots,\xi_s$ 到<br>
+基 $\eta_1,\eta_2,\dots,\eta_s$ 的过渡矩阵是$Q$，<br>
+若 $f$ 在基偶 $\{a_i\}_1^n$ 与 $\{\xi_i\}_1^s$ 下矩阵为A，在基偶 $\{\beta_i\}_1^n$ 与 $\{\eta_i\}_1^s$ 下矩阵为 $B$，<br>
 则 $B=Q^{-1}AP$
+
 特别是，若 $f\in Hom(V,V)$ 在基 $\alpha_1,\alpha_2,\dots,\alpha_n$ 下的矩阵是 $A$,
 则 $f$ 在新的基$\alpha'_1,\alpha'_2,\dots,\alpha'_n)=(\alpha_1,\alpha_2,\dots,\alpha_n)P$ 下的矩阵
 是 $B=P^{-1}AP$
