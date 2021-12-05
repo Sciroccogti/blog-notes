@@ -27,6 +27,8 @@ $f_X(x_1,\dots,x_m;n_1,\dots,n_m)=\frac{\partial F_X(x_1,\dots,x_m;n_1,\dots,n_m
 
 $S[n]=X[1]+X[2]+\dots+X[n]$ 为 $X[n]$ 的和过程
 
+TODO：P90
+
 ### 二阶矩过程
 
 如果离散时间随机过程 $\{X[n]\}^\infty_{n=1}$ 对于每个 n，一维随机变量 $X[n]$ 的方差都存在，则为离散时间二阶矩过程。

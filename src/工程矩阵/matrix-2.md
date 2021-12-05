@@ -109,7 +109,7 @@ $$\beta_s=\alpha_s-\frac{\langle\alpha_s,\beta_{s-1}\rangle}{\langle\beta_{s-1},
 
 A 是酉矩阵$\Leftrightarrow A^{-1}=A^H\Leftrightarrow A$的行/列向量组是 $C^n$ 的标准正交基
 
-**定理**：
+==**定理**==：
 设 $\alpha_1,\alpha_2,\dots,\alpha_n$ 是 V 的标准正交基，
 $$(\gamma_1,\gamma_2,\dots,\gamma_n)=(\alpha_1,\alpha_2,\dots,\alpha_n)U$$
 则 $\gamma_1,\gamma_2,\dots,\gamma_n$ 是标准正交基 $\Leftrightarrow U$ 是酉矩阵.
@@ -186,8 +186,8 @@ $$d(\alpha,\eta)=\min_{\xi\in W}d(\alpha,\xi)$$
 设 V 是内积空间，$f\in Hom(V,V)$，若
 $$\langle f(\alpha),f(\beta)\rangle=\langle\alpha,\beta\rangle,\forall\alpha\beta\in V$$
 称 $f$ 是等距变换
-若 $F=R$，称 $f$ 是正交变换
-若 $F=C$，称 $f$ 是酉变换
+- 若 $V=R$，称 $f$ 是正交变换
+- 若 $V=C$，称 $f$ 是酉变换
 
 **充要条件**：
 设 V 是内积空间，$f\in Hom(V,V)$，下述条件等价：
