@@ -147,7 +147,11 @@ $n\times n Hermite$矩阵 A，B 共合同$\Leftrightarrow A,B$ 有相同的正�
 4. 存在可逆阵 P 使得 $A=P^HP$
 5. A 的各顺序主子式均大于零
 
+各主对角线元素即 A 的各一阶主子式，因此主对角线元素为正
+
 正定阵隐含为 Hermite 阵
+
+正定阵可逆，其逆矩阵为 $P^{-1}{P^H}^{-1}$
 
 ### 4-4-2 其它有定性
 
@@ -175,7 +179,7 @@ $\Leftrightarrow -A$ 的偶数阶顺序主子式 > 0$\Leftrightarrow -A$ 的奇�
 
 **定理**：
 设 A 是 $n\times n Hermite$阵，则下述条件等价：
-1. A是半正定的
+1. A是半正定的，即 $\forall X_0\neq\theta,f(X_0)\geq 0$
 2. A的特征值均大于或等于零
 3. A 与 $\begin{pmatrix}I_r & \\ & O\end{pmatrix}$ 共轭合同；
 4. 存在矩阵 P 使得 $A=P^HP$
@@ -185,7 +189,7 @@ $\Leftrightarrow -A$ 的偶数阶顺序主子式 > 0$\Leftrightarrow -A$ 的奇�
 
 ### 4-5-1 Rayleigh商
 
-设 A 是 n 阶 H 阵，则 $\forall X\in C^n,X^HAX\inR$，于是，可以定义一复变量的实值函数
+设 A 是 n 阶 H 阵，则 $\forall X\in C^n,X^HAX\in R$，于是，可以定义一复变量的实值函数
 $$R(X)=\frac{X^HAX}{X^HX},\forall\theta\neq X\in C^n$$
 称此函数为 A 的 Rayleigh 商
 

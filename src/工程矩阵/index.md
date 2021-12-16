@@ -34,3 +34,5 @@ comments: false
 $AX=0\Rightarrow K(A)=X$
 
 $AX=Y\Rightarrow R(A)=Y$
+
+$(A^H)^{-1}=(A^{-1})^H$
