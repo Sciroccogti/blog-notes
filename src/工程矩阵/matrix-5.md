@@ -10,8 +10,8 @@ layout: note
 ### 5-1-1 定义
 
 设 $V$ 是数域 $F$ 上线性空间，$\nu$ 是定义在 $V$ 上的实值函数。如果 $\nu$ 满足：
-1. 对任意 $\theta\neq\alpha\in V, \nu(\alpha)>0$（恒正性）
-2. 对任意 $\alpha\in V,k\in F, \nu(k\alpha)=|k|\nu(\alpha)$（齐性）
+1. 对任意 $\theta\neq\alpha\in V, \nu(\alpha)>0$（正定性，恒正性）
+2. 对任意 $\alpha\in V,k\in F, \nu(k\alpha)=|k|\nu(\alpha)$（齐次性）
 3. 对任意 $\alpha,\beta\in V, \nu(\alpha+\beta)\leq \nu(\alpha)+\nu(\beta)$（三角不等式）
 则称 $\nu$ 是 $V$ 上的范数。
 定义了范数的线性空间称为赋范线性空间
@@ -26,7 +26,7 @@ layout: note
 
 对任意 $X=(x_1,x_2,\dots,x_n)\in C^n$
 1. 向量 1-范数：$\|X\|_1=\sum^n_{i=1}|x_i|$
-2. 向量 2-范数：$\|X\|_2=\sqrt{\sum^n_{i=1}|x_i|^2}$
+2. 向量 2-范数：$\|X\|_2=\sqrt{\sum^n_{i=1}|x_i|^2}=\sqrt{X^HX}$
 3. 向量 $\infty-$范数：$\|X\|_\infty=\max_{1\leq i\leq n}|x_i|$
 
 $C^n$ 中更多的范数对任意 $X=(x_1,x_2,\dots,x_n)\in C^n$，
@@ -83,6 +83,8 @@ $$\|AB\|_c\leq\|A\|_a\|B\|_b$$
 **定理**：
 $\|\bullet\|_{m_1}$，$\|\bullet\|_{m_2}$ 是相容的，$\|\bullet\|_{m_\infty}$ 是不相容的
 
+相容矩阵范数的定义域可以覆盖所有尺寸的矩阵
+
 ### 5-2-3 算子范数
 
 设 $\|\bullet\|_{\nu_n}$，$\|\bullet\|_{\nu_m}$ 分别是 $C^n, C^m$ 上的范数，定义 $C^{m\times n}$ 上的实值函数 $\|\bullet\|$：
@@ -99,9 +101,9 @@ A 的算子 1-范数，算子 2-范数，算子 $\infty-$范数，分别记为$\
 
 **定理**：
 设 $A=(a_{ij})_{s\times n}$，则
-$\|A\|_1=\max_{1\leq j\leq n}\left\{\sum_{i=1}^s|a_{ij}|\right\}$，列模和范数
-$\|A\|_2=\sqrt{\rho(A^HA)}$，谱范数
-$\|A\|_\infty=\max_{1\leq i\leq s}\left\{\sum_{j=1}^n|a_{ij}|\right\}$，行模和范数
+- $\|A\|_1=\max_{1\leq j\leq n}\left\{\sum_{i=1}^s|a_{ij}|\right\}$，列模和范数
+- $\|A\|_2=\sqrt{\rho(A^HA)}$，谱范数，$\rho$ 代表取最大特征值
+- $\|A\|_\infty=\max_{1\leq i\leq s}\left\{\sum_{j=1}^n|a_{ij}|\right\}$，行模和范数
 
 ## 5-3 收敛定理
 
@@ -224,6 +226,10 @@ f^{\prime}\left(\lambda_{i}\right)=g^{\prime}\left(\lambda_{i}\right), \\
 \cdots,\\
 f^{\left(t_{i}-1\right)}\left(\lambda_{i}\right)=g^{\left(t_{i}-1\right)}\left(\lambda_{i}\right) $$
 
+若最小多项式最高次为 $m$，则任何 $A^n, n\geq m$ 都能化为次数不超过 $m-1$ 的多项式，
+因此可以设 $e^A=c_0I+c_1A^1+\cdots+c_{m-1}A^{m-1}$，或 $e^{At}=c_0(t)I+c_1(t)A^1+\cdots+c_{m-1}(t)A^{m-1}$
+
+
 ### 性质
 
 **定理**：
@@ -233,3 +239,5 @@ f^{\left(t_{i}-1\right)}\left(\lambda_{i}\right)=g^{\left(t_{i}-1\right)}\left(\
 3. $(e^A)^{-1}=e^{-A}$
 
 $(A^B)^H=A^{(B^H)}$
+
+

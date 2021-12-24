@@ -189,7 +189,7 @@ $$\langle f(\alpha),f(\beta)\rangle=\langle\alpha,\beta\rangle,\forall\alpha\bet
 - 若 $V=R$，称 $f$ 是正交变换
 - 若 $V=C$，称 $f$ 是酉变换
 
-**充要条件**：
+==**充要条件**==：
 设 V 是内积空间，$f\in Hom(V,V)$，下述条件等价：
 1. $f$ 保持长度不变
 2. $f$ 保持内积不变
@@ -201,3 +201,5 @@ $$\langle f(\alpha),f(\beta)\rangle=\langle\alpha,\beta\rangle,\forall\alpha\bet
 假设 V 是一个欧氏空间，$\omega\in V$ 是一个单位向量，映射
 $$f:V\rightarrow V,\alpha\rightarrow\alpha-2\langle\alpha,\omega\rangle\omega$$
 则是 V 上的等距变换（正交变换）
+
+镜像变换在任意一组基下的矩阵都相似于 $diag(-1,1,\cdots,1)$

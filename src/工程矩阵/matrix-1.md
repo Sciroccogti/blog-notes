@@ -12,7 +12,7 @@ layout: note
 线性空间是由下述三个要素确定的代数系统：
 1. 一个数域 $F$，一个非空集合 $V$ （$V$ 中的元素也称为向量）；
 2. 两个运算：加法：$V+V\rightarrow V$；数乘：$F\times V\rightarrow V$；
-3. 上述运算满足如下八个公理：**其实只需加法、乘法封闭**
+3. 上述运算满足如下==八个公理==：**其实只需加法、数乘封闭**
    - 加法交换律：$\forall\alpha,\beta\in V$，有 $\alpha+\beta=\beta+\alpha$；
    - 加法结合律：$\forall\alpha,\beta,\gamma\in V$，有 $(\alpha+\beta)+\gamma=a+(\beta+\gamma)$；
    - 零元存在性：存在 $\theta\in V$，使得$\forall\alpha\in V$，有$\alpha+\theta=\alpha$；
@@ -182,8 +182,8 @@ $E_{ij}$：仅有第 i 行第 j 列为 1，其它元素为 0 的方阵
 
 ### 1-4-1 交与和的定义
 
-**定义**
-$V_1\cap V_2=\{\eta\in V|\eta\in V_1,\eta\in V_2$
+**定义**<br>
+$V_1\cap V_2=\{\eta\in V|\eta\in V_1,\eta\in V_2$<br>
 $V_1+V_2=\{\eta\in V | \exist \eta\in V_1,\eta\in V_2 s.t.\eta=\eta_1+\eta_2\}$ 分别称为子空间的交与和
 
 **定理**
@@ -192,7 +192,7 @@ $V_1\cap V_2,V_1+V_2$都是 V 的子空间.
 ### 1-4-2 维数定理
 
 **定理**：
-若 $V_1=L(\alpha_1,\alpha_2,\dots,\alpha_s),V_2=L(\beta_1,\beta_2,\dots,\beta_t)$
+若 $V_1=L(\alpha_1,\alpha_2,\dots,\alpha_s),V_2=L(\beta_1,\beta_2,\dots,\beta_t)$<br>
 则 $V_1+V_2=L(\alpha_1,\alpha_2,\dots,\alpha_s,\beta_1,\beta_2,\dots,\beta_t)$
 
 **维数定理**：
@@ -213,8 +213,8 @@ $V_1\cap V_2,V_1+V_2$都是 V 的子空间.
 5. 将$V_1,V_2$的基合在一起就是$V_1+V_2$的基
 
 **多个子空间的直和**：
-设 $V_1,V_2,\dots,V_s\leq V$，若 $\forall\eta\in V_1+V_2+\dots+V_s$，
-$\exist$唯一的$\eta_i\in V_i,i=1,2,\dots,s$，使得$\eta=\sum^s_{i=1}\eta_i$，
+设 $V_1,V_2,\dots,V_s\leq V$，若 $\forall\eta\in V_1+V_2+\dots+V_s$，<br>
+$\exist$唯一的$\eta_i\in V_i,i=1,2,\dots,s$，使得$\eta=\sum^s_{i=1}\eta_i$，<br>
 则称 $V_1+V_2+\dots+V_s$ 是直和，记为 $V_1\oplus V_2\oplus\dots\oplus V_s$.
 
 **定理**：
@@ -230,13 +230,13 @@ $\exist$唯一的$\eta_i\in V_i,i=1,2,\dots,s$，使得$\eta=\sum^s_{i=1}\eta_i$
 ### 1-5-1 映射的概念
 
 **定义**：
-设 S 和 T 是两个集合，$f$ 是一个法则，使得对 $S$ 中每个元素 $x$，
-在 T 中必存在唯一的元素 y 与之对应，则称 $f$ 是 S 到 T 的映射，
+设 S 和 T 是两个集合，$f$ 是一个法则，使得对 $S$ 中每个元素 $x$，<br>
+在 T 中必存在唯一的元素 y 与之对应，则称 $f$ 是 S 到 T 的映射，<br>
 记为
 $$f:S\rightarrow T,f(x)=y$$
-如果$f(x)=y$，则称 y 为 x 的象，x 为 y 的原象
-S在映射 $f$ 下的全体象记为 $f(S)$，称为 $f$ 的值域
-集合S到自身的映射 $f:S\rightarrow S$ 称为S上的变换
+如果$f(x)=y$，则称 y 为 x 的象，x 为 y 的原象<br>
+S在映射 $f$ 下的全体象记为 $f(S)$，称为 $f$ 的值域<br>
+集合S到自身的映射 $f:S\rightarrow S$ 称为S上的变换<br>
 集合S到自身的映射 $f:S\rightarrow S$，$x\rightarrow x$称为S上的恒等变换
 
 **定义**：
@@ -273,6 +273,7 @@ $$R(f)=L(f(\alpha_1),f(\alpha_2),\dots,f(\alpha_s))$$
 1. $kf:V\rightarrow U,(kf)(x)=kf(x)$
 2. $f+f':V\rightarrow U,(f+f')(x)=f(x)+f'(x)$
 3. $gf:V\rightarrow W,(gf)(x)=g(f(x))$ 容易记错！不满足交换律
+
 容易验证，以上运算的结果仍然都是线性映射
 
 $f$ 是线性变换
@@ -311,7 +312,7 @@ $$V:\alpha_1,\alpha_2,\dots,\alpha_n;U:\beta_1,\beta_2,\dots,\beta_s$$
 则 $B=Q^{-1}AP$
 
 特别是，若 $f\in Hom(V,V)$ 在基 $\alpha_1,\alpha_2,\dots,\alpha_n$ 下的矩阵是 $A$,
-则 $f$ 在新的基$\alpha'_1,\alpha'_2,\dots,\alpha'_n)=(\alpha_1,\alpha_2,\dots,\alpha_n)P$ 下的矩阵
+则 $f$ 在新的基$(\alpha'_1,\alpha'_2,\dots,\alpha'_n)=(\alpha_1,\alpha_2,\dots,\alpha_n)P$ 下的矩阵
 是 $B=P^{-1}AP$
 
 > 可知 A 与 B 相似，也就是说同一线性变换在不同的基偶下是相似的
