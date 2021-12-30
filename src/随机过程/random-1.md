@@ -15,6 +15,8 @@ M 个集合的笛卡尔乘积为M 维边界样本空间
 
 #### Borel 事件集
 
+==空、全、补、并==
+
 设 $\mathcal{A}$ 由样本空间 $\mathcal{S}$ 的一些事件组成的集合，如果事件集 A 满足下面的三个性质：
 1. $S\in \mathcal{A}, \varnothing\in \mathcal{A}$
 2. 若 $A\in \mathcal{A}$，则 $\bar{A}\in\mathcal{A}$

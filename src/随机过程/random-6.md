@@ -6,9 +6,12 @@
 
 **概率意义**上相等（几乎处处相等）：事件发生概率相等：$P\{X=Y\}=1$
 
-**均方意义**上相等：X 与 Y 的二阶矩存在且满足 $E\{|X-Y|^2\}=\int_{\mathbb{R}^2}|x-y|^2f_{XY}(x,y)dxdy=0$
+**均方意义**上相等：X 与 Y 的二阶矩存在且满足 $E\{|X-Y|^2\}=\int_{\mathbb{R}^2}|x-y|^2f_{XY}(x,y)dxdy=0$（即均方收敛）
 
 **Loève准则**：$X_n$ 均方收敛 当且仅当 序列 $X_n$ 的自相关函数 $R_X[n_1,n_2]$ 满足 $\lim_{n_1,n_2\rightarrow\infty}R_X[n_1,n_2]=C$，C 为常数。
+
+若 $X_n$ 均方收敛至 $X$，则 
+$$E\{X\}=E\{ms \lim_{n\rightarrow\infty}X_n\}=\lim_{n\rightarrow\infty}E\{X_n\}, \lim_{n\rightarrow\infty}E\{X_n-X\}=0$$
 
 ## 6-2 连续时间随机过程的均方连续
 
@@ -30,6 +33,8 @@ $$\lim _{\tau \rightarrow 0} E\left\{\left[\frac{X\left(t_{0}+\tau\right)-X\left
 
 $X(t)$ 在 $t_{0}$ 点的 $n$ 阶均方导数可以递归地定义为
 $$\frac{\mathrm{d}^{n} X\left(t_{0}\right)}{\mathrm{d} t^{n}}=X^{(n)}\left(t_{0}\right)=\operatorname{ms}_{\tau \rightarrow 0} \frac{X^{(n-1)}\left(t_{0}+\tau\right)-X^{(n-1)}\left(t_{0}\right)}{\tau}$$
+
+$$X'(t)=\frac{\partial f(A,t)}{\partial t}$$
 
 ## 6-3 连续时间随机过程的均方积分
 

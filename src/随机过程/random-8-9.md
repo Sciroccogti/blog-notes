@@ -4,6 +4,10 @@
 $$S_X(f)=\sum_{m=-\infty}^\infty R_X[m]e^{-jm2\pi f}$$
 $$R_X[m]=\int_{-1/2}^{1/2}S_X(f)e^{jm2\pi f}df$$
 
+- $R_Y[m]=R_X[m]*h[m]*h^*[-m]$，$h[m]$ 为系统冲激响应
+
+> $\left(\frac{e^{j2\pi f}}{2}\right)^\infty=\left(\frac{e^{-j2\pi f}}{2}\right)^\infty=0$
+
 白噪声：功率谱密度 $S_X(f)$ 为常数
 
 - $E\{X[n+k]X^*[n-1]\}=E\{X[n+k-1]X^*[n]\}=R_X[k-1]$

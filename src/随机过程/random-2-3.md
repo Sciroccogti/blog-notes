@@ -60,13 +60,21 @@ $=\int_{-\infty}^{\infty}\left(x-m_{X}\right)^{2} f_{X}(x) \mathrm{d} x=\psi_{X}
 - 均值：$E\{X\}=\alpha$
 - 方差：$Var\{X\}=\alpha$
 
+
+**指数分布**：
+- 概率分布函数：$F_X(x)=1-e^{-\lambda x}$
+- 概率密度函数：$f_X(x)=\lambda e^{-\lambda x}, x\geq0$
+- 概率特征函数：$\Phi_X(\omega)=\frac{\lambda}{\lambda-j\omega}$
+
 - **概率质量函数**：$P(x_i)$，实际上是离散的概率密度函数
 - **概率生成函数**：$G_X(z)=\sum_{k=0}^\infty z^kP(x_k)$，概率质量函数的 z 变换
-- **概率分布函数**：$F_X(x)=P(\{X\leq x\})$
+- **概率分布函数**：$F_X(x)=P(\{X\leq x\})$，离散和连续都有
 - **概率密度函数**：$f_X(x)=\frac{dF_X(x)}{dx}$，pdf
-- **概率特征函数**：$\Phi_X(\omega)=\int_{-\infty}^\infty f_X(x)e^{j\omega x}dx=E\{e^{j\omega k}\}=\sum_{k=0}^\infty e^{j\omega k}P_k$，概率密度函数的 Fourier 变换
+- **概率特征函数**：$\Phi_X(\omega)=\int_{-\infty}^\infty f_X(x)e^{j\omega x}dx=E\{e^{j\omega k}\}=\sum_{k=0}^\infty e^{j\omega k}P_k=G_X(e^{j\omega})$，概率密度函数的 ==负== Fourier 变换
 
 # 第三章 多维随机变量
+
+联合概率分布函数中令某个分量趋于无穷大，就得到边界概率分布函数
 
 - **概率密度函数**：$f(x,y)$，有 $\int_{-\infty}^{+\infty}\int_{-\infty}^{+\infty} f(x,y)dxdy=1$
 - **联合概率密度函数**：为联合概率分布函数的 n 阶导数
@@ -83,6 +91,9 @@ $=\int_{-\infty}^{\infty}\left(x-m_{X}\right)^{2} f_{X}(x) \mathrm{d} x=\psi_{X}
 - **相关系数**: $\rho_{X_{1} X_{2}}=\frac{C_{X_{1} X_{2}}}{\sqrt{C_{X_{1} X_{1}} C_{X_{2} X_{2}}}}$
 - **联合原点矩**: $E\left\{X_{1}^{m} X_{2}^{n}\right\}=\int_{\mathbb{R}^{2}} x_{1}^{m} x_{2}^{n} f_{X_{1} X_{2}}\left(x_{1}, x_{2}\right) \mathrm{d} x_{1} \mathrm{~d} x_{2}$
 - **联合中心矩**: $E\left\{\left(X_{1}-m_{X_{1}}\right)^{m}\left(X_{2}-m_{X_{2}}\right)^{n}\right\}=\int_{\mathbb{R}^{2}}\left(x_{1}-m_{X_{1}}\right)^{m}\left(x_{2}-m_{X_{2}}\right)^{n} f_{X_{1} X_{2}}\left(x_{1}, x_{2}\right) \mathrm{d} x_{1} \mathrm{~d} x_{2}$
+
+- 相关性：协方差不恒为 0
+- 独立性：边界密度函数之积等于联合密度函数
 
 ## 3-4 多维随机变量分量间的关系
 
