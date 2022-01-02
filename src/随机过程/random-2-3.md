@@ -66,6 +66,8 @@ $=\int_{-\infty}^{\infty}\left(x-m_{X}\right)^{2} f_{X}(x) \mathrm{d} x=\psi_{X}
 - 概率密度函数：$f_X(x)=\lambda e^{-\lambda x}, x\geq0$
 - 概率特征函数：$\Phi_X(\omega)=\frac{\lambda}{\lambda-j\omega}$
 
+==概率质量函数和生成函数只能描述离散，而分布函数、密度函数和特征函数可以描述离散和连续==
+
 - **概率质量函数**：$P(x_i)$，实际上是离散的概率密度函数
 - **概率生成函数**：$G_X(z)=\sum_{k=0}^\infty z^kP(x_k)$，概率质量函数的 z 变换
 - **概率分布函数**：$F_X(x)=P(\{X\leq x\})$，离散和连续都有

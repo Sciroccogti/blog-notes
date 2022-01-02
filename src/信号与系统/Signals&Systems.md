@@ -67,7 +67,7 @@ categories: 信号与系统
 |
 猪：$e^{-{\alpha}t}\epsilon(t),\alpha>0$|$\frac{1}{\alpha+j\omega}$|$\frac{1}{s+\alpha}$|
 |
-||$e^{-{\alpha}\|t\|}\epsilon(t),\alpha>0$|$\frac{2\alpha}{\alpha^2+\omega^2}$|
+|$e^{-{\alpha}\|t\|}\epsilon(t),\alpha>0$|$\frac{2\alpha}{\alpha^2+\omega^2}$||
 |
 $e^{\alpha{t}}t^n\epsilon(t)$||$\frac{n!}{(s-\alpha)^{n+1}}$|
 |
