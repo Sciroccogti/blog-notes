@@ -255,3 +255,23 @@ A template for memos:
 - Introduction: A lead-in or overview stating why you are writing and what you writing about.
 - Discussion: Detailed development, made accessible through highlighting techniques, explaining exactly what you want to say.
 - Conclusion: State what is next, when this will occur, and why the date is important.
+
+## Unit 5 Instuctions
+
+### Designing and writing instructions
+
+1. audience recognition: level of readers' knowledge
+   1. Don't assume anything
+   2. spell it out clearly and thoroughtly
+2. language style
+   1. imperative mood + active voice + present tense
+   2. clarity
+3. short, simple steps in proper sequence
+   1. use first, next, finally
+   2. use numbers
+4. planning ahead
+
+design instructions based on
+- audience
+- purpose
+- subject
