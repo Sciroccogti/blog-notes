@@ -65,7 +65,7 @@ $$\lim_{k\rightarrow\infty}\eta_k=\eta_0$$
 矩阵p-范数：
 设矩阵 $A=(a_{ij})_{m\times n}$，则有下列矩阵范数：
 $$\|A\|_{m_1}=\sum_{i,j}|a_{ij}|$$
-$$\|A\|_{m_2}=\left(\sum_{i,j}|a_{ij}|^2\right)^{1/2}=(\operatorname{tr}A^HA)^{1/2}=(\operatorname{tr}AA^H)^{1/2}$$
+$$\|A\|_{m_2}=\sqrt{\sum_{i,j}|a_{ij}|^2}=(\operatorname{tr}A^HA)^{1/2}=(\operatorname{tr}AA^H)^{1/2}$$
 $$\|A\|_{m_\infty}=\max_{i,j}\{|a_{ij}|\}$$
 $\|A\|_{m_2}$ 又记为 $\|A\|_F$，称为 Frobenius 范数，简称 F 范数
 

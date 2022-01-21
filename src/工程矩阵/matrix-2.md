@@ -184,7 +184,7 @@ $$d(\alpha,\eta)=\min_{\xi\in W}d(\alpha,\xi)$$
 
 **定义**：
 设 V 是内积空间，$f\in Hom(V,V)$，若
-$$\langle f(\alpha),f(\beta)\rangle=\langle\alpha,\beta\rangle,\forall\alpha\beta\in V$$
+$$\langle f(\alpha),f(\beta)\rangle=\langle\alpha,\beta\rangle,\forall\alpha,\beta\in V$$
 称 $f$ 是等距变换
 - 若 $V=R$，称 $f$ 是正交变换
 - 若 $V=C$，称 $f$ 是酉变换

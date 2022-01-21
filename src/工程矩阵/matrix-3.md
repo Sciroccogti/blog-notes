@@ -251,7 +251,7 @@ $r(A-I)=r(J-I)$
 
 **定理**：
 假设矩阵 A 的最小多项式是 $m(\lambda)=\Pi_{i=1}^s(\lambda-\lambda_i)^{r_i}$，
-则 $r_i$ 即是 A 的 Jordan 标准形中以 $\lambda_i$ 为主对角元的 Jordan 块的最高阶数（但可以达不到）。
+则 $r_i$ 即是 A 的 Jordan 标准形中以 $\lambda_i$ 为主对角元的 Jordan 块的最高阶数。
 特别地，A 相似于对角阵 $\Leftrightarrow A$ 的最小多项式无重根
 
 ==相似矩阵有相同的迹，相同的秩==
