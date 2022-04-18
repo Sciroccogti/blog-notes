@@ -1,6 +1,6 @@
 [book]
 authors = []
-language = "zh-cn"
+language = "zh"
 multilingual = false
 src = "src"
 
@@ -21,6 +21,8 @@ git-repository-url = "https://github.com/Sciroccogti/blog-notes"
 additional-css = ["mdBook-pagetoc/style.css"]
 additional-js = [
     "mdBook-pagetoc/sidebar.js",
+    "lunr.zh.js",
+    "lunr.stemmer.support.js",
 #    "mdbook-mermaid/mermaid.min.js",
 #    "mdbook-mermaid/mermaid-init.js",
 ]
