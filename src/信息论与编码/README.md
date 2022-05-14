@@ -17,3 +17,10 @@ article: false
 
 主要计算题：信源编码和信道编码
 
+## 第二章
+
+**Jensen 不等式**（凹函数定义）：$\sum_{i=1}^N p_i\operatorname{lb}(x_i)\leq\operatorname{lb}\left(\sum_{i=1}^N p_i x_i\right)$
+
+## 第三章
+
+联合熵与条件熵的关系：$H(X_1X_2X_3)=H(X_3|X_1X_2)+H(X_1X_2)$

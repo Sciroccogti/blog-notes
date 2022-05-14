@@ -41,7 +41,9 @@ $$[\mathbf{X} \cdot P]:\left\{\begin{array}{ccccc}\mathbf{X}: & x_{1}, & x_{2}, 
 
 ## 2-2 信源熵和条件熵
 
-**定义 2.4** ==信源熵== ：$H(X)=\sum_{x\in X} P(x)I(x)=\sum^N_{i=1}P(x_i)I(x_i)=-\sum_{i=1}^N P(x_i)\operatorname{lb} P(x_i)=H(p_1,\dots,p_N)$，其中定义 $0\operatorname{lb}0=0$
+**定义 2.4** ==信源熵== ：
+$$H(X)=\sum_{x\in X} P(x)I(x)=\sum^N_{i=1}P(x_i)I(x_i)=-\sum_{i=1}^N P(x_i)\operatorname{lb} P(x_i)=H(p_1,\dots,p_N)$$
+其中定义 $0\operatorname{lb}0=0$
 
 - 信源熵只与信源符号概率分布有关，是一种先验熵
 - 对给定概率分布的信源，信源熵是定值，代表信源每发出一个符号给出的平均信息量，其量纲为 信息量单位 / 信源符号

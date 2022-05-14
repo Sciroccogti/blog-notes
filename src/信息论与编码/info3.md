@@ -141,6 +141,8 @@ $$P(x_1, \dots, x_N)=\sum_{i=1}^N(P_i)^{NP_i}$$
 $$P\left\{\left|\frac{1}{K}\operatorname{lb}P(\mathbf{x})+H(\mathbf{X})\right|<\delta\right\}>1-\varepsilon$$
 即信息熵与自信息量的差趋近于0
 
+所谓**渐近等分性**：序列的越长，典型序列的总概率越接近于1，它的各个序列的出现概率越趋于相等
+
 - 每个典型序列的概率
   - 对于任意小的正数 $\delta$，当 K 足够大时，$2^{-K(H(X)+\delta)}<P(x)<2^{-K(H(X)-\delta)}$，可近似于 $P(\mathbf{x})=2^{-KH(X)}$
 - 典型序列个数
@@ -168,7 +170,7 @@ $$P\left\{\left|\frac{1}{K}\operatorname{lb}P(\mathbf{x})+H(\mathbf{X})\right|<\
 有记忆离散信源每发一个符号所提供的平均信息量为
 $$H_{\infty}=\lim_{K\rightarrow\infty}\frac{1}{K}H(X_1X_2\dots X_K)\triangleq\lim_{K\rightarrow\infty}H_K(X_1X_2\dots X_K)$$
 
-称 $H_K(X_1X_2\dots X_K)$ 为**平均符号熵**，$H_{\infty}$ 为平稳离散有记忆信源的**极限熵**，又称**熵率**
+称 $H_K(X_1X_2\dots X_K)=\frac{1}{K}H(X_1X_2\dots X_K)$ 为**平均符号熵**，$H_{\infty}$ 为平稳离散有记忆信源的**极限熵**，又称**熵率**
 
 #### 平稳离散信源熵的性质
 
@@ -177,3 +179,17 @@ $$H(X)=H(X_1X_2\dots X_K)=H(X_1)+H(X_2|X_1)+H(X_3|X_1X_2)+\dots+H(X_K|X_1X_2\dot
 即 $H(X)$ 是 X 中起始时刻随机变量 $X_1$ 的熵与各阶条件熵之和。也即熵的链接准则。
 
 **定理 3.6** 平稳离散信源的条件熵随 K 的增加是非递增的，即 $H(X_K|X_1X_2\dots X_{K-1})\leq H(X_{K-1}|X_1X_2\dots X_{K-2})$
+
+特别的，由于平稳性，$H(X_1)=H(X_2)$，故 $H(X_2|X_1)\leq H(X_2)=H(X_1)$
+
+**推论 1**：给定 K 时，平稳离散信源的条件熵小于等于平均符号熵，即
+$H(X_K|X_1X_2\dots X_{K-1})\leq (1/K)H(X_1X_2\dots X_{K})$
+
+**推论 2**：平稳离散信源的平均符号熵随 K 的增加是非递增的，即
+$H_K(X_1X_2\dots X_K)\leq H_{K-1}(X_1X_2\dots X_{K-1})$
+
+**定理 3.7 极限熵的第二种形式** 对于平稳离散信源，令 $H_K(X_1X_2\dots X_K)=\frac{1}{K}H(X_1X_2\dots X_K)$，若 $H(X_1)<\infty$，则 $H_K(X)$ 的极限值存在且有
+$$H_\infty=\lim_{K\rightarrow\infty}H_K(X)=\lim_{K\rightarrow\infty}H(X_K|X_1X_2\dots X_{K-1})$$
+
+- 一般离散平稳有记忆信源每发一个符号所提供的平均信息量等于极限熵 $H_\infty$
+- $H_\infty$ 较难计算，但当 K 不是很大时，其平均符号熵 $H_K(X)$ 或条件熵 $H(X_K|X_1X_2\dots X_{K-1})$ 就非常接近于 $H_\infty$，可用作极限熵的近似值
