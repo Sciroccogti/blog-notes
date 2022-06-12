@@ -67,7 +67,7 @@ $$H(X)=\sum_{x\in X} P(x)I(x)=\sum^N_{i=1}P(x_i)I(x_i)=-\sum_{i=1}^N P(x_i)\oper
 
 条件概率仅由信道特性决定，看作信道给出的信息量。信源信宿对调也可得到条件自信息量
 
-$H(X|Y)=-\sum_{x\in X, y\in Y}P(xy)\operatorname{lb}P(x|y)$
+==$H(X|Y)=-\sum_{x\in X, y\in Y}P(xy)\operatorname{lb}P(x|y)$==
 
 **定义 2.6 条件熵**：对于联合符号集 XY，在给定 Y 的条件下，用联合概率 $P(xy)$ 对 X 集合的条件自信息量进行加权的统计平均值。
 
@@ -95,6 +95,7 @@ $I(x_i;y_j)=I(x_i)-I(x_i|y_i)=I(y_j)-I(y_i|x_i)=I(x_i)+I(y_j)-I(x_iy_i)$
 $I(x_i;y_j|z_k)=I(x_i|z_k)-I(x_i|y_jz_k)$，助记：把 $|z_k$ 看作后缀，则简化为互信息量的公式
 
 **定义 2.8** ==平均互信息量== ：
+$$I(X;Y)=\sum_{XY}P(xy)\operatorname{lb}\frac{P(x|y)}{}$$
 1. $I(X;Y)$ 为互信息量 $I(x_i;y_j)$ 的联合概率加权的统计平均值
 2. $I(x_i;y_j)$ 在条件概率空间中的统计平均为 $I(X;y_j)=\sum_{x\in X}P(x|y_j)I(x;y_j)=\sum_{i=1}^N P(x_i|y_j)I(x_i;y_j)$
 

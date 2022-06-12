@@ -6,6 +6,17 @@ article: false
 
 # 1 Overview
 
+## 1-1 Register
+
+register 语域：写作、演讲风格，代表了语言正式的程度
+
+5 Registers
+- Static (frozen)
+- Formal (regulated)
+- Consultative (professional/ academic)
+- Casual (group)
+- Personal (intimate)
+
 ## 1-2 Title
 
 S.C.I:
