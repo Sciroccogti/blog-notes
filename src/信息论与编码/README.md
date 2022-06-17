@@ -17,6 +17,16 @@ article: false
 
 主要计算题：信源编码和信道编码
 
+$I(X;Y)$ 的最大值就是信道容量 $C$
+
+平均功率 $\mathrm{E}\left\{y^{2}\right\}=\mathrm{E}\left\{(x+n)^{2}\right\}=\mathrm{E}\left\{x^{2}\right\}+\mathrm{E}\left\{n^{2}\right\}=S+\sigma^{2}=S+N$
+
+平均交流功率就是方差，就是自相关函数的峰值
+
+熵和信道容量要写单位
+
+导数和积分表
+
 ## 第二章
 
 **Jensen 不等式**（凹函数定义）：$\sum_{i=1}^N p_i\operatorname{lb}(x_i)\leq\operatorname{lb}\left(\sum_{i=1}^N p_i x_i\right)$
@@ -34,3 +44,11 @@ $\sum_i\frac{i}{2^i}=2$：乘公比错位相减
 ## 第六章
 
 相对熵积分要复习一下
+
+熵功率没搞懂
+
+6.3 需要仔细看（特别是6.3.2）
+
+## 第十章
+
+> 陪集首不能属于对应子群，且汉明重应最小

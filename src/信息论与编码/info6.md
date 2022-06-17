@@ -6,6 +6,8 @@ layout: note
 article: false
 --- -->
 
+# 第六章 连续消息和连续信道
+
 ## 6-1 连续消息的信息度量
 
 1. 将连续型信源变换成离散型信源，用离散信源的分析方法进行分析
@@ -27,9 +29,9 @@ article: false
 $$H(x)=-\sum_{L}^{L} p\left(x_{i}\right) \Delta x \mathrm{lb}\left[p\left(x_{i}\right) \Delta x\right]$$
 - 当 $\Delta x$ 趋于 0 , 得到连续信源的熵的计算公式 
 $$H(x)=-\int_{-\infty}^{\infty} p(x) \mathrm{lb} p(x) \mathrm{d} x-\int_{-\infty}^{\infty} p(x) \mathrm{lb} \Delta x \mathrm{~d} x$$
-第一项由且仅由 $p(x)$ 决定, 为确定值, 称为相对熵, 用 $h(x)$ 表示;
+第一项由且仅由 $p(x)$ 决定, 为确定值, 称为**相对熵**, 用 $h(x)$ 表示;
 $$h(x)=-\int_{-\infty}^{\infty} p(x) \operatorname{lb} p(x) \mathrm{d} x$$
-第二项当 $\Delta x \rightarrow 0$ 时它趋于无限大, 称为绝对熵, 用 $H\left(x_{0}\right)$ 表示:
+第二项当 $\Delta x \rightarrow 0$ 时它趋于无限大, 称为**绝对熵**, 用 $H\left(x_{0}\right)$ 表示:
 $$H\left(x_{0}\right)=-\int_{-\infty}^{\infty} p(x) \operatorname{lb} \Delta x \mathrm{~d} x$$
 
 **相对熵**：
@@ -206,6 +208,9 @@ $$R_{t}=\lim _{T \rightarrow \infty} \frac{1}{T} I\left(\mathbf{X}^{N} ; \mathbf
 
 ## 6-3 香农信道容量公式
 ### 6-3-1 加性信道的信道容量
+
+加性噪声：$p ( y | x )=p (n )$
+
 连续加性信道的信道容量
 - 单符号信道
 $$C=\max _{p(x)} I(\mathbf{X} ; \mathbf{Y})=\max _{p(x)}[h(y)-h(y \mid x)]=\max _{p(x)}[h(y)-h(n)]$$
@@ -218,3 +223,46 @@ $$\begin{aligned}
 &C=\max _{p(\mathbf{x})}\left\{\lim _{T \rightarrow \infty} \frac{1}{T} I\left(\mathbf{X}^{N} ; \mathbf{Y}^{N}\right)\right\}=\max _{p(\mathbf{(})}\left\{\lim _{T \rightarrow \infty} \frac{1}{T}[h(\mathbf{y})-h(\mathbf{y} \mid \mathbf{x})]\right\} \\
 &=\max _{p(\mathbf{x})}\left\{\lim _{T \rightarrow \infty} \frac{1}{T}[h(\mathbf{y})-h(\mathbf{n})]\right\}=\lim _{T \rightarrow \infty} \frac{1}{T}\left\{\max _{p(\mathbf{x})}[h(\mathbf{y})-h(\mathbf{n})]\right\}
 \end{aligned}$$
+
+- 单符号高斯加性信道：
+  - $h(n)=\ln\sqrt{2\pi e \sigma^2}$
+  - $C=\frac{1}{2}\ln(1+\frac{S}{N})$ 奈特 /样值
+
+- 单符号非高斯加性信道
+  - $\frac{1}{2}\ln(1+\frac{S}{N})\leq C\leq \frac{1}{2}\ln(\frac{S+N}{\overline{N}})$ 奈特 /样值
+  - 同等噪声功率情况下高斯噪声是最坏情况噪声（使得信道容量最小）
+
+- 多维无记忆高斯加性信道
+
+**注水原则**：应当向 噪声功率较小分量度 分配 较多的输入信号功率；若噪声各分量等功率，则输入信号等功率分配最优
+
+- 多维有记忆高斯加性信道
+
+### 6-3-2 带限AWGN信道的信道容量
+
+WGN采样点为服从独立同分布的高斯随机变量
+
+WGN各样值方差均为 $N_0 B$（即自相关函数）
+
+（AWGN信道中）当输入信号的样值服从零均值独立高斯分布，且每个样值的功率相等时（即输入信号具有高斯白噪声特性）
+
+带限AWGN信道的信道容量为 $C=BT\ln(1+\frac{P_s}{N_0B})$
+
+单位时间的信道容量（**Shannon 公式**）：$C_T=B\ln(1+\frac{P_s}{N_0B})$
+
+Shannon公式成立的条件
+1. 输入信号平均功率为 $P_s$（为AWGN时达到信道容量）
+2. 带宽为 $B$ 的带限信道
+3. 噪声为AWGN，功率谱密度为 $N_0/2$
+
+### 有色加性高斯噪声信道的信道容量
+
+### 6-3-3 香农公式的意义
+
+1. 信道容量与所传输信号的有效带宽成正比，信号的有效带宽越宽，信道容量越大
+2. 信道容量与信道上的信号噪声比有关，信噪比越大，信道容量也越大，但其制约规律呈对数关系
+3. 信道容量 C、有效带宽 B 和信噪比 S/N 可以相互起补偿作用，即可以互换
+4. 当信噪比小于1时，信道的信道容量并不等于0，这说明此时信道仍具有传输消息的能力。也就是说，信噪比小于1时仍能进行可靠的通信
+5. 信号有效带宽无限时，信道容量 $C=\frac{P_s}{N_0}\operatorname{lb}e\approx 1.44\frac{P_s}{N_0}bit/s$
+6. $\frac{E_b}{N_0}=\frac{C}{R}\ln2\geq\ln2$
+7. 香农公式是在噪声为AWGN情况推得的，对那些不是白色高斯噪声的信道干扰而言，其信道容量应该大于按香农公式计算的结果
