@@ -7,6 +7,9 @@ article: false
 - rationales：基本原理
 - discourse：语篇
 - anticlimax: 虎头蛇尾
+- prevail: 流行
+- hedging: 模糊的
+- bjectivity: 客观的
 
 # 1 Overview
 
@@ -107,6 +110,10 @@ employs figures of speech
 4. 并列复合句
 
 # 2 Literature Review
+
+1. Information prominent citation：作者待在括号里
+2. Author prominent citation：作者是主语
+3. Weak author prominent citation：authors 是主语，一群作者待在括号里
 
 ## 2-1 Reviewing Literature
 
@@ -341,15 +348,20 @@ Essential elements：
 
 Action | Tense
 ---|---
-Giving background details | the present tense
-Describing the research activity | the simple past tense or the present perfect tense
-Describing the methods | the simple past tense (active or passive voice)
-Reporting results | the simple past tense
-Stating conclusions | the present tense
+Giving background details | 一般现在时
+Describing the research activity | 一般过去时 或 现在完成时
+Describing the methods | 一般过去时（主动或被动）
+Reporting results | 一般过去时
+Stating conclusions | 一般现在时
+
+- 背景/目标：一般现在时
+- 过程/方法：一般过去时
+- 结果
 
 The Types of abstracts
 1. Informative abstract
 2. Structured abstract
+   1. 分段，每段开头为粗体的 Aim, Methods, Results, Research limitations/implications 或 Conclusion
 
 ## 5-2 Keywords
 
@@ -364,6 +376,13 @@ Purpose of keywords:
 - know what words reflect the key information of the paper
 - read more carefully when meeting these words in the paper
 
+Categories:
+- Discipline
+- Topic
+- Location
+- Methods
+- Data source
+
 Number of keywords
 - can’t be too few or many
 - 3~5 in journals
@@ -371,6 +390,9 @@ Number of keywords
 - choose the keywords from recent or often-cited titles close to their contribution
 
 ## 5-3 Reference
+
+- IEEE: `[编号]. 作者名缩写. 作者姓, “文章题目,” 斜体期刊名称, 城市, 洲, 国家, 月日, 年, 页码`
+- MLA: `作者姓, 作者名. “文章题目.” 斜体期刊名称, vol. 期刊号, no. 发行号, 发行年份, pp. 页码`
 
 Functions
 - used to avoid plagiarism
