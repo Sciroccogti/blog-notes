@@ -9,6 +9,7 @@ create-missing = false
 build-dir = "../public/notes"
 
 [preprocessor.katex]
+renderers = ["html"]
 
 [preprocessor.mark]
 command = "mdbook-mark"
@@ -19,6 +20,8 @@ renderer = ["html"]
 
 # [preprocessor.mermaid]
 # command = "mdbook-mermaid"
+
+[output.katex]
 
 [output.html]
 git-repository-url = "https://github.com/Sciroccogti/blog-notes"
