@@ -6,7 +6,7 @@ src = "src"
 
 [build]
 create-missing = false
-build-dir = "../public/notes"
+build-dir = "./public"
 
 [preprocessor.katex]
 renderers = ["html"]
